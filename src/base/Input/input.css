@@ -1,0 +1,12 @@
+#login-signin-input{
+    background-color: rgb(233, 233, 233);
+    height: 70px;
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 20px;
+    color: rgb(81, 81, 81);
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
