@@ -1,0 +1,51 @@
+.enrolled-course-container{
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.enrolled-course-container h1{
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+.enrolled-course-resources{
+    padding: 5px;
+}
+.enrolled-course-resources h2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+}
+.enrolled-course-resources ul{
+    list-style-type: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    margin: 10px;
+}
+.enrolled-course-resources ul li{
+    margin: 10px;
+}
+.enrolled-course-container button{
+    align-self: center;
+    border: none;
+    height: 40px;
+    width: 150px;
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+    background-color: aqua;
+    font-weight: bold;
+    color: white;
+    background-color: orange;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.enrolled-course-container button:hover{
+    background-color: darkgoldenrod;
+}

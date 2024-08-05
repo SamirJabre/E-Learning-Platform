@@ -1,9 +1,9 @@
 import React from 'react'
 import './input.css'
 
-function Input({type, placeholder}) {
+function Input({type, placeholder , onchange}) {
   return (
-    <input id='login-signin-input' type={type} placeholder={placeholder}/>
+    <input id='login-signin-input' type={type} placeholder={placeholder} onChange={onchange}/>
   )
 }
 

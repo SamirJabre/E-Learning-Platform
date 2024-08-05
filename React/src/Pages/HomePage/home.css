@@ -1,0 +1,19 @@
+.home-container{
+    height: 100vh;
+    width: 100vw;
+    
+}
+.courses-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+.enrolled-courses{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}

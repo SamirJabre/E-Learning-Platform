@@ -1,9 +1,14 @@
 import React from 'react'
 import './login.css'
 import Input from '../../base/Input/Input'
+import { useSelector } from 'react-redux';
 
 function Login() {
+    const number = useSelector((state) => state.number);
+
   return (
+    <>
+    <h1>{number}</h1>
     <div className="login-page-container">
         <div className="login-left-side">
             <div className="login-container">
@@ -30,7 +35,8 @@ function Login() {
             </div>
         </div>
     </div>
-  )
+    </>
+  );
 }
 
 export default Login
