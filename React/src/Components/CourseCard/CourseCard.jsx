@@ -1,16 +1,35 @@
-import React from 'react'
+import React , {useState} from 'react'
 import './coursecard.css'
 
-function CourseCard() {
+function CourseCard({img , title, description , instructor , schedule , course_id , user_id}) {
+
+  const [courseId , setCourseId] = useState(course_id);
+  const [userId , setUserId] = useState(user_id);
+
+  const handleEnrollment = async () => {
+    
+    await fetch('http://127.0.0.1:6969/enrollment' , {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ userId, courseId }),
+    })
+  }
+  
+  
+
   return (
     <div className="course-card-container">
         <div className="course-card-image-container">
-            <img src="https://media.istockphoto.com/id/1353769234/photo/training-and-skill-development-concept-with-icons-of-online-course-conference-seminar-webinar.jpg?s=612x612&w=0&k=20&c=2YJG1My6Lu1T1FnzIPbimRNORcSbSuz6A8zb7HKNpx4=" alt="Course Image" id='course-image'/>
+            <img src={img} alt="Course Image" id='course-image'/>
         </div>
         <div className="course-card-details-container">
-            <h1>Course Title</h1>
-            <p>Course Description</p>
-            <button>Enroll Now</button>
+            <h1>{title}</h1>
+            <p>{description}</p>
+            <p>Instructor : {instructor}</p>
+            <p>Course Schedule : {schedule}</p>
+            <button onClick={()=>{handleEnrollment()}}>Enroll Now</button>
         </div>
     </div>
   )
